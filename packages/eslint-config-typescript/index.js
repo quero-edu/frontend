@@ -24,7 +24,7 @@ module.exports = {
 
     // It prevents relative imports, which make it difficult to move files around and identify the file's location in the project.
     "no-restricted-imports": ["error", {
-      "patterns": [".*"]
+      "patterns": ['../*', './**/*']
     }],
 
     '@typescript-eslint/adjacent-overload-signatures': 'error',
