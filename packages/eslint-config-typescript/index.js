@@ -23,8 +23,8 @@ module.exports = {
     'no-undef': 'off',
 
     // It prevents relative imports, which make it difficult to move files around and identify the file's location in the project.
-    "no-restricted-imports": ["error", {
-      "patterns": ['../*', './**/*']
+    'no-restricted-imports': ['error', {
+      'patterns': ['../*', './**/*']
     }],
 
     '@typescript-eslint/adjacent-overload-signatures': 'error',
