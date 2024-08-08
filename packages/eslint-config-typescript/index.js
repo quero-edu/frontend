@@ -22,6 +22,11 @@ module.exports = {
     // It is safe to disable this rule when using TypeScript because TypeScript's compiler enforces this check.
     'no-undef': 'off',
 
+    // It prevents relative imports, which make it difficult to move files around and identify the file's location in the project.
+    'no-restricted-imports': ['error', {
+      'patterns': ['../*', './**/*']
+    }],
+
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/ban-types': 'error',
